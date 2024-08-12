@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700; 1.900&display=swap');
+
+:root {
+    --cor-background: #2B2B2B;
+    --cor-primaria: #57AEFF;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #B9B9B9;
+    --cor-quaternaria: #3b3b3b;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-background);
+}
+
+.cabecalho {
+    padding: 3% 34.78% 0;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 13.82%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.cabecalho__menu__botao {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    gap: 8px;
+    padding-bottom: 11px;
+}
+
+.active {
+    color: var(--cor-primaria);
+    text-decoration: none;
+    padding-bottom: 8px;
+    border-bottom: 3px solid var(--cor-primaria);
+}
+
+.cabecalho__menu__botao:hover {
+    border-bottom: 3px solid var(--cor-primaria);
+    padding-bottom: 8px;
+}
+
+.portifolio {
+    padding: 5% 10.82% 5%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 210px;
+}
+
+.portifolio__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.portifolio__conteudo__informacoes {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.portifolio__conteudo__titulo {
+    font-family: 'Do Hyeon' , sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.portifolio__conteudo__titulo__skills {
+    font-family: 'Do Hyeon' , sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.portifolio__conteudo__titulo__projects {
+    font-family: 'Do Hyeon' , sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.portifolio__conteudo__texto {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.portifolio__conteudo__subtitulo {
+    font-family: 'Do Heyon', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--cor-secundaria);
+}
+
+.portifolio__conteudo__redes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.portifolio__conteudo__botao {
+    display: flex;
+    justify-content: center;
+    width: 378px;
+    padding: 16px 0;
+    border: 2px solid var(--cor-primaria);
+    border-radius: 8px;
+    gap: 8px;
+    text-decoration: none;
+    text-align: center;
+    align-items: flex-end;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+}
+
+.portifolio__conteudo__botao:hover {
+    background-color: var(--cor-quaternaria);
+}
+
+.conteudo__projetos__apresentar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.conteudo__projetos__texto   {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.imagens__projetos {
+    display: flex;
+    flex-direction: row;
+    gap: 66.22px;
+}
+
+.rodape__conteudo {
+    width: 100%;
+    padding: 25px 0 ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid var(--cor-primaria);
+    gap: 25px;
+}
+
+.creditos {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--cor-terciaria);
+}
+
+.menu__buttom{
+    display: none;
+}
+
+
+
+@media (max-width: 1080px){
+
+    .invisible {
+        display: none;
+    }
+
+    .menu__buttom{
+        display: initial;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 2%;
+        position: absolute;
+        right: 4%;
+        top: 16px;
+    }
+
+    .cabecalho{
+        padding: 5% 4%;
+        align-items: center;
+        position: relative;
+        background-color: var(--cor-quaternaria);
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        padding: 2%;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .portifolio {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .portifolio__conteudo{
+        width: 95%;
+        padding: 32px;
+        padding-bottom: 5%;
+    }
+
+    .conteudo__projetos__apresentar {
+        flex-direction: column;
+        align-items: center;
+        padding: 4%;
+    }
+
+    .imagens__projetos {
+        flex-direction: column;
+    }
+
+    .rodape {
+        padding: 4%;
+        width: 100%;
+    }
+}
