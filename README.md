@@ -9,7 +9,7 @@
 
 Este é um desafio que foi feito pela alura durante o Programa Trilhas - Inova Maranhao 2024, onde consiste em fazer um portifolio que contenha as informacoes basicas como, 'sobre mim', 'projetos' e 'minhas habilidades'. 
 
-# ✔️Tecnologias Utilizadas
+# 💻Tecnologias Utilizadas
 
 - ``HTML``
 - ``CSS``
